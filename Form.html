@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" id="theme-stylesheet" href="light.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button id="dark-mode-toggle" style="position: fixed; z-index: 1; cursor: pointer;">Toggle Dark Mode</button>
+    <script>
+        const themeToggleButton = document.getElementById('dark-mode-toggle');
+        const themeStylesheet = document.getElementById('theme-stylesheet');
+        let isDarkTheme = false;
+      
+        themeToggleButton.addEventListener('click', () => {
+          isDarkTheme = !isDarkTheme;
+      
+          if (isDarkTheme) {
+            themeStylesheet.href = 'dark.css';
+          } else {
+              themeStylesheet.href = 'light.css';
+            }
+        });
+        </script>
+
+    <div class="im">
+        <img src="easw.png" alt="EASWARI ENGINEERING COLLEGE">
+        <h1>
+            <div class="header-text">EASWARI</div>
+            <div class="sub-header">ENGINEERING COLLEGE</div>
+            <br>
+            <div class="location">Ramapuram,Chennai</div>
+            <br>
+        </h1>
+    </div>
+   <form action="">
+    <div  align="center">
+        <h1  align="center"class="programme-text f">PROGRAMME: B.E COMPUTER SCIENCE AND ENGINEERING</h1> <br><br>
+        <div  align="center"class="feedback-text f">Alumni feedback</div>
+        <div  align="center"class="confidential-text f">The information you provide on this questionnaire will be kept completely confidential.<br></div>
+    </div>
+    <pre>
+        <div>
+<label for="name">Name:             </label><input type="text" name="name" id="name">
+
+<label for="Ref">Register Number:</label><input type="number" name="reg" id="reg">
+
+<label for="yog">Year of Graduation:</label><input type="number" name="yog" id="yog">
+
+<label for="cs">Company Selected:</label><input type="text" name="cs" id="cs">
+
+        </div> 
+    </pre>
+            <table border="1" style="margin-right: 20px; margin-left: 20px;" class="f">
+            <tr><td colspan="4"><h2 style="margin-top:13px;" align="center" class="confidential-text f" >PART A: GENERAL PROGRAM FEEDBACK</h2></td></tr>
+            <tr>
+                    <th>Questions</th>
+                    <th>To some extent (1)</th>
+                    <th>To a moderate extent (2)</th>
+                    <th>To a great extent (3)</th>
+                </tr>
+              <tr>
+                  <td>1. How did the Computer Science and Engineering faculty respond to your technical needs inside and outside of classrooms?</td>
+                  <td><input type="radio" name="question1" value="1"></td>
+                  <td><input type="radio" name="question1" value="2"></td>
+                  <td><input type="radio" name="question1" value="3"></td>
+                </tr>
+            <tr>
+                <td>2. How helpfully did the lab technicians respond to your needs?</td>
+                <td><input type="radio" name="question2" value="1"></td>
+                <td><input type="radio" name="question2" value="2"></td>
+                <td><input type="radio" name="question2" value="3"></td>
+            </tr>
+            <tr>
+                <td>3. How do you feel the program prepared you for a Computer Science and Engineering career?</td>
+                <td><input type="radio" name="question3" value="1"></td>
+                <td><input type="radio" name="question3" value="2"></td>
+                <td><input type="radio" name="question3" value="3"></td>
+            </tr>
+            <tr>
+                <td>4. How would you rate the student/faculty interaction in the program? Who was your favorite faculty? Why?</td>
+                <td><input type="radio" name="question4" value="1"></td>
+                <td><input type="radio" name="question4" value="2"></td>
+                <td><input type="radio" name="question4" value="3"></td>
+            </tr>
+            <!-- Add more rows for additional questions -->
+            <tr>
+                <td>5. How effective was the counseling from Computer Science Engineering faculty advisor? Explain.</td>
+                <td><input type="radio" name="question5" value="1"></td>
+                <td><input type="radio" name="question5" value="2"></td>
+                <td><input type="radio" name="question5" value="3"></td>
+            </tr>
+            <tr>
+                <td>6. How effective was the counseling from career guidance advisor? Explain.</td>
+                <td><input type="radio" name="question6" value="1"></td>
+                <td><input type="radio" name="question6" value="2"></td>
+                <td><input type="radio" name="question6" value="3"></td>
+            </tr>
+            <tr>
+                <td>7. How would you rate the laboratory facilities? Explain.</td>
+                <td><input type="radio" name="question7" value="1"></td>
+                <td><input type="radio" name="question7" value="2"></td>
+                <td><input type="radio" name="question7" value="3"></td>
+            </tr>
+            <tr>
+                <td>8. How would you rate the classrooms and laboratory environment?</td>
+                <td><input type="radio" name="question8" value="1"></td>
+                <td><input type="radio" name="question8" value="2"></td>
+                <td><input type="radio" name="question8" value="3"></td>
+            </tr>
+            
+            
+        </table>
+        
+        
+        
+        <div style="font-family: Fira Code; margin: 20px 20px;" >
+            <h1 class="feedback-text " style="font-size:35px; font-family: Fira Code;">  Program Outcomes</h1>
+         <pre style=" white-space: pre-wrap; overflow-x: auto; max-width: 100%;">
+            <p class="confidential-text"  style="margin-top: -17px; margin-bottom:-20px ; font-size:25px; font-family: Fira Code;">   At this time you should have attained the required professional, technical, and social experience in the program to practice the following fifteen program outcomes. Please mark on a scale of 0 to 3 (3 being the highest and 0 being the lowest) to indicate your knowledge with the ability to:
+            </p>
+         </pre> 
+         </div>       
+             <table class="f" style="margin-right: 20px; margin-left: 20px;" border="1">
+                <tr><td colspan="4"><h2 style="margin-top:13px;" align="center" class="confidential-text f" >B: STUDENT DEVELOPMENT ASSESSMENT(PROGRAM OUTCOMES)</h2></td></tr>
+
+                <tr>
+                    <th>Program Outcomes</th>
+                    <th>To some extent (1)</th>
+                    <th>To a moderate extent (2)</th>
+                    <th>To a great extent (3)</th>
+                </tr>
+                <tr>
+                    <td>PO1: Engineering knowledge</td>
+                    <td><input type="radio" name="po1" value="1"></td>
+                    <td><input type="radio" name="po1" value="2"></td>
+                    <td><input type="radio" name="po1" value="3"></td>
+                </tr>
+                <tr>
+                    <td>PO2: Problem analysis</td>
+                    <td><input type="radio" name="po2" value="1"></td>
+                    <td><input type="radio" name="po2" value="2"></td>
+                    <td><input type="radio" name="po2" value="3"></td>
+                </tr>
+                <tr>
+                    <td>PO3: Design/development of solutions</td>
+                    <td><input type="radio" name="po3" value="1"></td>
+                    <td><input type="radio" name="po3" value="2"></td>
+                    <td><input type="radio" name="po3" value="3"></td>
+                </tr>
+                <tr>
+                    <td>PO4: Conduct investigations of complex problems</td>
+                    <td><input type="radio" name="po4" value="1"></td>
+                    <td><input type="radio" name="po4" value="2"></td>
+                    <td><input type="radio" name="po4" value="3"></td>
+                </tr>
+                <tr>
+                    <td>PO5: Modern tool usage</td>
+                    <td><input type="radio" name="po5" value="1"></td>
+                    <td><input type="radio" name="po5" value="2"></td>
+                    <td><input type="radio" name="po5" value="3"></td>
+                </tr>
+                <tr>
+                    <td>PO6: The engineer and society</td>
+                    <td><input type="radio" name="po6" value="1"></td>
+                    <td><input type="radio" name="po6" value="2"></td>
+                    <td><input type="radio" name="po6" value="3"></td>
+                </tr>
+                <tr>
+                    <td>PO7: Environment and sustainability</td>
+                    <td><input type="radio" name="po7" value="1"></td>
+                    <td><input type="radio" name="po7" value="2"></td>
+                    <td><input type="radio" name="po7" value="3"></td>
+                </tr>
+                <tr>
+                    <td>PO8: Ethics</td>
+                    <td><input type="radio" name="po8" value="1"></td>
+                    <td><input type="radio" name="po8" value="2"></td>
+                    <td><input type="radio" name="po8" value="3"></td>
+                </tr>
+                <tr>
+                    <td>PO9: Individual and team work</td>
+                    <td><input type="radio" name="po9" value="1"></td>
+                    <td><input type="radio" name="po9" value="2"></td>
+                    <td><input type="radio" name="po9" value="3"></td>
+                </tr>
+                <tr>
+                    <td>PO10: Communication</td>
+                    <td><input type="radio" name="po10" value="1"></td>
+                    <td><input type="radio" name="po10" value="2"></td>
+                    <td><input type="radio" name="po10" value="3"></td>
+                </tr>
+                <tr>
+                    <td>PO11: Project management and finance</td>
+                    <td><input type="radio" name="po11" value="1"></td>
+                    <td><input type="radio" name="po11" value="2"></td>
+                    <td><input type="radio" name="po11" value="3"></td>
+                </tr>
+                <tr>
+                    <td>PO12: Life-long learning</td>
+                    <td><input type="radio" name="po12" value="1"></td>
+                    <td><input type="radio" name="po12" value="2"></td>
+                    <td><input type="radio" name="po12" value="3"></td>
+                </tr>
+                <tr>
+                    <td>PSO1: To analyze, design and develop computing solutions</td>
+                    <td><input type="radio" name="pso1" value="1"></td>
+                    <td><input type="radio" name="pso1" value="2"></td>
+                    <td><input type="radio" name="pso1" value="3"></td>
+                </tr>
+                <tr>
+                    <td>PSO2: To apply software engineering principles and practices</td>
+                    <td><input type="radio" name="pso2" value="1"></td>
+                    <td><input type="radio" name="pso2" value="2"></td>
+                    <td><input type="radio" name="pso2" value="3"></td>
+                </tr>
+                <tr>
+                    <td>PSO3: To adapt to emerging Information and Communication Technologies (ICT)</td>
+                    <td><input type="radio" name="pso3" value="1"></td>
+                    <td><input type="radio" name="pso3" value="2"></td>
+                    <td><input type="radio" name="pso3" value="3"></td>
+                </tr>
+            </table>
+        
+        <table border="1" class="f" style="margin-left: 20px ;margin-right: 20px; padding: auto;" >
+            <tr>
+                <td rowspan="2">1</td>
+                <td rowspan="2">	
+                    Overall, this Program was:
+                    </td>
+                <td>	Excellent </td>
+                <td> Very Good	
+                </td>
+                <td>Good</td><td>Fair</td><td>	Poor</td>
+
+            </tr>
+            <tr>    <td><input type="radio" name="p1" value="1"></td>
+                <td><input type="radio" name="p1" value="2"></td>
+                <td><input type="radio" name="p1" value="3"></td>
+                <td><input type="radio" name="p1" value="4"></td>
+                <td><input type="radio" name="p1" value="5"></td>
+             </tr>
+             <tr>
+                <td>2</td>
+                <td>Suggestions for improvement of the program:</td>
+                <td colspan="5"><textarea style="font-family: 'Open Sans', sans-serif;
+                    font-family: 'Raleway', sans-serif; " name="sugg" id="" cols="100" rows="7"></textarea></td>
+             </tr>
+        </table>
+
+<h1 class="feedback-text f"> Comments </h1>
+<textarea name="comm" style="font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif ;"   id="" cols="150" rows="20"></textarea>
+<input  style= " border:1px red solid ; font-family: 'Open Sans'; font-size: large; padding: 5px 13px;margin: 2cm;  display: block;color: azure;text-shadow:0 0 10px whitesmoke; background-color: red; box-shadow:0 0 3px orangered;" type="reset" value="reset">
+<input style="border:1px rgb(95, 255, 47) solid ; font-family: 'Open Sans'; font-size: large; padding: 5px 13px;margin: 2cm;  display: block;color: azure;text-shadow:0 0 10px whitesmoke; background-color: rgb(95, 255, 47); box-shadow:0 0 3px rgba(45, 245, 0, 0.897) ;" type="submit" value="submit">
+</form>
+</body>
+</html>
